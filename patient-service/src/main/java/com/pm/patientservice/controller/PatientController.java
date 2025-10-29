@@ -1,11 +1,11 @@
 package com.pm.patientservice.controller;
 
+import com.pm.patientservice.dto.PatientRequestDTO;
 import com.pm.patientservice.dto.PatientResponseDTO;
 import com.pm.patientservice.service.PatientService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,5 +21,13 @@ public class PatientController {
     @GetMapping("/get")
     public ResponseEntity<List<PatientResponseDTO>> getPatient(){
         return ResponseEntity.ok().body(patientService.getPatients());
+    }
+
+    @PostMapping("/createPatient")
+    public ResponseEntity<PatientResponseDTO> createPatient(@Valid @RequestBody PatientRequestDTO patientRequestDTO){
+        //@valid use to check the validation of the request that we write in DTO
+        //@RequestBody convert the json to patientRequestDTO. Take the JSON (or XML / plain text) from the HTTP request body and convert it into this Java object.
+        return ResponseEntity.ok().body(patientService.createPatient(patientRequestDTO));
+
     }
 }
