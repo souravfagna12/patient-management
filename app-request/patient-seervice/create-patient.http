@@ -4,10 +4,8 @@ Content-Type: application/json
 
 {
   "name": "sourav",
-  "address": "house 24, pali, faridabad, haryana",
-  "email": "s",
-  "dateOfBirth": "2003-09-03",
-  "rigisteredDate": "2009-08-09"
+  "address": "house 24, pali, faridabad, haryana"
+
 }
 
 ###
