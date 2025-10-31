@@ -6,8 +6,8 @@ Content-Type: application/json
   "name": "sourav",
   "address": "house 24, pali, faridabad, haryana",
   "email": "souravfagna14@gmail.com",
-  "dateOfBirth": "2003-09-03"
-
+  "dateOfBirth": "2003-09-03",
+  "rigisteredDate": "2009-08-09"
 }
 
 ###
