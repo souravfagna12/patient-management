@@ -5,8 +5,8 @@ Content-Type: application/json
 {
   "name": "xyz",
   "address": "house 24, pali, faridabad, haryana",
-  "email": "souravdddd14@gmail.com",
-  "dateOfBirth": "2003-09-03",
-  "rigisteredDate": "2009-08-09"
+  "email": "souravdd14@gmail.com",
+  "dateOfBirth": "2003-09-03"
+
 }
 ###
